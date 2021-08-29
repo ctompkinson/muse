@@ -9,6 +9,7 @@ import LoadingMessage from '../utils/loading-message';
 import errorMsg from '../utils/error-msg';
 import Command from '.';
 import GetSongs from '../services/get-songs';
+import killstreaks from "../services/killstreaks";
 
 @injectable()
 export default class implements Command {
@@ -61,7 +62,6 @@ export default class implements Command {
 
       await player.connect(targetVoiceChannel);
       await player.play();
-
       await res.stop('the stop-and-go light is now green');
       return;
     }
@@ -155,5 +155,8 @@ export default class implements Command {
 
       await player.play();
     }
+    killstreaks.getInstance().update(msg.guild?.id, msg.author.id, (message: string) => {
+      msg.channel.send(message)
+    })
   }
 }
