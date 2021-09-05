@@ -48,6 +48,20 @@ export default class {
       return true;
     }
 
+    if (msg.content.toLowerCase().includes("nice one")) {
+      await Promise.all([
+        msg.channel.send("NICE ONE"),
+        this.playClip(msg.guild!, {
+          title: 'NICE ONE',
+          artist: 'Yokie',
+          url: 'https://www.youtube.com/watch?v=lCcwn6bGUtU',
+          length: 31,
+          playlist: null,
+          isLive: false
+        }, 26, 3)
+      ])
+    }
+
     return false;
   }
 
