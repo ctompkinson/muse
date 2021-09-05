@@ -60,6 +60,82 @@ export default class {
           isLive: false
         }, 25, 6)
       ])
+      return true;
+    }
+
+    if (msg.content.toLowerCase().includes("scum")) {
+      await Promise.all([
+        msg.channel.send("STOP RIGHT THERE CRIMINAL SCUM"),
+        this.playClip(msg.guild!, {
+          title: 'STOP RIGHT THERE CRIMINAL SCUM',
+          artist: 'Oblivion',
+          url: 'https://www.youtube.com/watch?v=jrlzlaHEaB0',
+          length: 94,
+          playlist: null,
+          isLive: false
+        }, 16, 4)
+      ])
+      return true;
+    }
+
+    if (msg.content.toLowerCase().includes("scum")) {
+      await Promise.all([
+        msg.channel.send("STOP RIGHT THERE CRIMINAL SCUM"),
+        this.playClip(msg.guild!, {
+          title: 'STOP RIGHT THERE CRIMINAL SCUM',
+          artist: 'Oblivion',
+          url: 'https://www.youtube.com/watch?v=jrlzlaHEaB0',
+          length: 94,
+          playlist: null,
+          isLive: false
+        }, 16, 4)
+      ])
+      return true;
+    }
+
+    if (msg.content.toLowerCase().includes("is win")) {
+      await Promise.all([
+        msg.channel.send("ALL I DO IS WIN WIN WIN WIN NO MATTER WHAT"),
+        this.playClip(msg.guild!, {
+          title: 'ALL I DO IS WIN WIN WIN WIN NO MATTER WHAT',
+          artist: 'DJ Khalid',
+          url: 'https://www.youtube.com/watch?v=zLdPG5YYiw4',
+          length: 1162,
+          playlist: null,
+          isLive: false
+        }, 6, 6)
+      ])
+      return true;
+    }
+
+    if (msg.content.toLowerCase().includes("hands in the air")) {
+      await Promise.all([
+        msg.channel.send("PUT YOUR HANDS IN THE AIR AND MAKE THEM STAY THERE"),
+        this.playClip(msg.guild!, {
+          title: 'PUT YOUR HANDS IN THE AIR AND MAKE THEM STAY THERE',
+          artist: 'DJ Khalid',
+          url: 'https://www.youtube.com/watch?v=zLdPG5YYiw4',
+          length: 1162,
+          playlist: null,
+          isLive: false
+        }, 14, 7)
+      ])
+      return true;
+    }
+
+    if (msg.content.toLowerCase().includes("milk")) {
+      await Promise.all([
+        msg.channel.send("🥛🥛🥛 I CAN MAKE MILK 🥛🥛🥛"),
+        this.playClip(msg.guild!, {
+          title: 'I CAN MAKE MILK',
+          artist: 'Taylor',
+          url: 'https://www.youtube.com/watch?v=Lyl48CJA5vc',
+          length: 19,
+          playlist: null,
+          isLive: false
+        }, 0, 4)
+      ])
+      return true;
     }
 
     return false;
