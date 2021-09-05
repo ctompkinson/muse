@@ -58,7 +58,7 @@ export default class {
           length: 31,
           playlist: null,
           isLive: false
-        }, 26, 3)
+        }, 25, 6)
       ])
     }
 
