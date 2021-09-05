@@ -54,7 +54,7 @@ export default class {
         this.playClip(msg.guild!, {
           title: 'NICE ONE',
           artist: 'Yokie',
-          url: 'https://www.youtube.com/watch?v=lCcwn6bGUtU',
+          url: 'https://www.youtube.com/watch?v=_Of3mcByF2Y',
           length: 31,
           playlist: null,
           isLive: false
