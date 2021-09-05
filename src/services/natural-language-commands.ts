@@ -50,9 +50,9 @@ export default class {
 
     if (msg.content.toLowerCase().includes("nice one")) {
       await Promise.all([
-        msg.channel.send("NICE ONE"),
+        msg.channel.send("OH NICE"),
         this.playClip(msg.guild!, {
-          title: 'NICE ONE',
+          title: 'OH NICE',
           artist: 'Yokie',
           url: 'https://www.youtube.com/watch?v=_Of3mcByF2Y',
           length: 31,
