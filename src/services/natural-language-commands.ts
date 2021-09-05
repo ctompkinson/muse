@@ -73,37 +73,7 @@ export default class {
           length: 94,
           playlist: null,
           isLive: false
-        }, 16, 4)
-      ])
-      return true;
-    }
-
-    if (msg.content.toLowerCase().includes("is win")) {
-      await Promise.all([
-        msg.channel.send("ALL I DO IS WIN WIN WIN WIN NO MATTER WHAT"),
-        this.playClip(msg.guild!, {
-          title: 'ALL I DO IS WIN WIN WIN WIN NO MATTER WHAT',
-          artist: 'DJ Khalid',
-          url: 'https://www.youtube.com/watch?v=GGXzlRoNtHU',
-          length: 227,
-          playlist: null,
-          isLive: false
-        }, 5, 7)
-      ])
-      return true;
-    }
-
-    if (msg.content.toLowerCase().includes("hands in the air")) {
-      await Promise.all([
-        msg.channel.send("PUT YOUR HANDS IN THE AIR AND MAKE THEM STAY THERE"),
-        this.playClip(msg.guild!, {
-          title: 'PUT YOUR HANDS IN THE AIR AND MAKE THEM STAY THERE',
-          artist: 'DJ Khalid',
-          url: 'https://www.youtube.com/watch?v=GGXzlRoNtHU',
-          length: 227,
-          playlist: null,
-          isLive: false
-        }, 14, 9)
+        }, 9, 5)
       ])
       return true;
     }
